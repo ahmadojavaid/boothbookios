@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="ContactPermissionCell" customModule="BoothBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8j-Cv-8vf">
+                        <rect key="frame" x="25" y="69" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9g7-X0-IAR"/>
+                            <constraint firstAttribute="width" constant="20" id="ipQ-Yt-u4f"/>
+                        </constraints>
+                        <state key="normal" image="check"/>
+                        <connections>
+                            <action selector="btnCheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bQA-GJ-p2S"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes please, we'd like to hear about offers and services." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uo-dc-uww">
+                        <rect key="frame" x="53" y="36" width="285" height="85.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Permission*" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnD-O3-Y1c">
+                        <rect key="frame" x="20" y="3" width="129.5" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Pxu-HQ-xdo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3Uo-dc-uww" secondAttribute="bottom" constant="8" id="Mh6-qt-kYS"/>
+                    <constraint firstItem="3Uo-dc-uww" firstAttribute="leading" secondItem="w8j-Cv-8vf" secondAttribute="trailing" constant="8" id="NJj-Sw-Ydl"/>
+                    <constraint firstItem="w8j-Cv-8vf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="To3-12-oXS"/>
+                    <constraint firstAttribute="trailing" secondItem="3Uo-dc-uww" secondAttribute="trailing" constant="25" id="aoS-7e-wQ6"/>
+                    <constraint firstItem="w8j-Cv-8vf" firstAttribute="centerY" secondItem="3Uo-dc-uww" secondAttribute="centerY" id="c15-XO-JNJ"/>
+                    <constraint firstItem="3Uo-dc-uww" firstAttribute="top" secondItem="pnD-O3-Y1c" secondAttribute="bottom" constant="8" id="cKW-Vj-VRL"/>
+                    <constraint firstItem="pnD-O3-Y1c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e4d-jh-Dir"/>
+                    <constraint firstItem="pnD-O3-Y1c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="sT6-bz-zgH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="w8j-Cv-8vf" id="gAA-Fc-l1b"/>
+                <outlet property="lblDetail" destination="3Uo-dc-uww" id="789-vO-hoq"/>
+                <outlet property="lblHeader" destination="pnD-O3-Y1c" id="TCl-cj-yBC"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="25" height="25"/>
+    </resources>
+</document>

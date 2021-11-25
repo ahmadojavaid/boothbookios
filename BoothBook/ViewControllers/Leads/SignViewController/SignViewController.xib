@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignViewController" customModule="BoothBook" customModuleProvider="target">
+            <connections>
+                <outlet property="signatureView" destination="qZO-UI-g5z" id="wOC-GI-IHL"/>
+                <outlet property="tableView" destination="QCD-GA-b4W" id="6J1-2j-Kyl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQz-ba-d2d">
+                    <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#905 - Marty &amp; Sam's Wedding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Bp-tp-dgl">
+                            <rect key="frame" x="25" y="0.0" width="364" height="45"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9Bp-tp-dgl" firstAttribute="top" secondItem="GQz-ba-d2d" secondAttribute="top" id="5kY-pB-kTJ"/>
+                        <constraint firstAttribute="width" secondItem="GQz-ba-d2d" secondAttribute="height" multiplier="46:5" id="6g9-m7-f4h"/>
+                        <constraint firstAttribute="trailing" secondItem="9Bp-tp-dgl" secondAttribute="trailing" constant="25" id="J3Q-ML-eZz"/>
+                        <constraint firstAttribute="bottom" secondItem="9Bp-tp-dgl" secondAttribute="bottom" id="kxt-mP-E3T"/>
+                        <constraint firstItem="9Bp-tp-dgl" firstAttribute="leading" secondItem="GQz-ba-d2d" secondAttribute="leading" constant="25" id="zNx-VT-rOX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.71584626470000001" green="0.7229338515" blue="0.7229338515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZO-UI-g5z" customClass="SignaturePad" customModule="SignaturePad">
+                    <rect key="frame" x="20" y="146.5" width="374" height="224.5"/>
+                    <color key="backgroundColor" red="0.78655314445495605" green="0.83847910165786743" blue="0.89263916015625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qZO-UI-g5z" secondAttribute="height" multiplier="5:3" id="Tp1-3K-Ukh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.509776771068573" green="0.62140727043151855" blue="0.75038069486618042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqC-HC-ZdF">
+                    <rect key="frame" x="20" y="119" width="65" height="19.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-GA-b4W">
+                    <rect key="frame" x="0.0" y="410" width="414" height="447"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU1-zA-PaF">
+                    <rect key="frame" x="291" y="374" width="103" height="33"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
+                    <state key="normal" title="Clear Signature">
+                        <color key="titleColor" red="0.15416961908340454" green="0.34417819976806641" blue="0.56420415639877319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clearSignatureBtn:" destination="-1" eventType="touchUpInside" id="3AR-QB-FdW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QCD-GA-b4W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Ch-DT-XV5"/>
+                <constraint firstAttribute="trailing" secondItem="wU1-zA-PaF" secondAttribute="trailing" constant="20" id="8Sl-9Z-rOf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qZO-UI-g5z" secondAttribute="trailing" constant="20" id="B93-Kv-Znz"/>
+                <constraint firstItem="qZO-UI-g5z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Hua-BX-5s2"/>
+                <constraint firstItem="wU1-zA-PaF" firstAttribute="top" secondItem="qZO-UI-g5z" secondAttribute="bottom" constant="3" id="QVA-T4-xj6"/>
+                <constraint firstItem="PqC-HC-ZdF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RqZ-7B-1cK"/>
+                <constraint firstItem="GQz-ba-d2d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vhw-rs-uMd"/>
+                <constraint firstItem="qZO-UI-g5z" firstAttribute="top" secondItem="PqC-HC-ZdF" secondAttribute="bottom" constant="8" symbolic="YES" id="kVW-rr-zrA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QCD-GA-b4W" secondAttribute="bottom" constant="5" id="nyo-ej-r0M"/>
+                <constraint firstItem="GQz-ba-d2d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tN4-r0-K2h"/>
+                <constraint firstItem="PqC-HC-ZdF" firstAttribute="top" secondItem="GQz-ba-d2d" secondAttribute="bottom" constant="30" id="ud4-xg-fkQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QCD-GA-b4W" secondAttribute="trailing" id="ufi-IK-Cmz"/>
+                <constraint firstItem="GQz-ba-d2d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wsZ-gr-0QL"/>
+                <constraint firstItem="QCD-GA-b4W" firstAttribute="top" secondItem="wU1-zA-PaF" secondAttribute="bottom" constant="3" id="yLu-tD-ckr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="100.00000000000001" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

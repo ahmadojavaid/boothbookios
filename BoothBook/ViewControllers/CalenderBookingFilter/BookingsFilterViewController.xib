@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingsFilterViewController" customModule="BoothBookBeta" customModuleProvider="target">
+            <connections>
+                <outlet property="calenderView" destination="IQG-Sm-mtd" id="qCI-Ft-b4p"/>
+                <outlet property="calenderViewAspectRatio" destination="uf2-e9-qla" id="VjM-9H-IqN"/>
+                <outlet property="tableView" destination="aj0-Jo-dgy" id="S87-AV-mAQ"/>
+                <outlet property="tableView2" destination="ae7-jc-OOF" id="f4x-6b-Xao"/>
+                <outlet property="tableView2Height" destination="QAS-w6-h7D" id="PQx-yL-2G6"/>
+                <outlet property="tableViewHeight" destination="j6D-wU-T4l" id="9En-Ru-dWs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="G2d-hJ-EWd">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvM-Hi-ABM">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTQ-qb-U61">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-jc-OOF">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="QAS-w6-h7D"/>
+                                    </constraints>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQG-Sm-mtd">
+                                    <rect key="frame" x="10" y="0.0" width="748" height="535"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="IQG-Sm-mtd" secondAttribute="height" multiplier="207:148" id="uf2-e9-qla"/>
+                                    </constraints>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aj0-Jo-dgy">
+                                    <rect key="frame" x="0.0" y="535" width="768" height="489"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="750" id="j6D-wU-T4l"/>
+                                    </constraints>
+                                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ae7-jc-OOF" secondAttribute="trailing" id="3FI-yg-kwb"/>
+                                <constraint firstAttribute="bottom" secondItem="aj0-Jo-dgy" secondAttribute="bottom" id="5IN-S9-5s8"/>
+                                <constraint firstItem="aj0-Jo-dgy" firstAttribute="leading" secondItem="uTQ-qb-U61" secondAttribute="leading" id="7SM-o9-1i4"/>
+                                <constraint firstAttribute="trailing" secondItem="IQG-Sm-mtd" secondAttribute="trailing" constant="10" id="9gL-Je-u8T"/>
+                                <constraint firstItem="IQG-Sm-mtd" firstAttribute="top" secondItem="ae7-jc-OOF" secondAttribute="bottom" id="Hzb-YB-nkA"/>
+                                <constraint firstItem="ae7-jc-OOF" firstAttribute="top" secondItem="uTQ-qb-U61" secondAttribute="top" id="KCT-Vg-bVo"/>
+                                <constraint firstItem="IQG-Sm-mtd" firstAttribute="leading" secondItem="uTQ-qb-U61" secondAttribute="leading" constant="10" id="cX1-UP-0lB"/>
+                                <constraint firstItem="aj0-Jo-dgy" firstAttribute="top" secondItem="IQG-Sm-mtd" secondAttribute="bottom" id="gaO-5H-tqd"/>
+                                <constraint firstItem="ae7-jc-OOF" firstAttribute="leading" secondItem="uTQ-qb-U61" secondAttribute="leading" id="xXV-xI-xLF"/>
+                                <constraint firstAttribute="trailing" secondItem="aj0-Jo-dgy" secondAttribute="trailing" id="ylE-Px-oPz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uTQ-qb-U61" firstAttribute="height" secondItem="hvM-Hi-ABM" secondAttribute="height" id="HaZ-5l-Oo7"/>
+                        <constraint firstAttribute="trailing" secondItem="uTQ-qb-U61" secondAttribute="trailing" id="LfD-be-xEC"/>
+                        <constraint firstItem="uTQ-qb-U61" firstAttribute="leading" secondItem="hvM-Hi-ABM" secondAttribute="leading" id="V6q-15-3aH"/>
+                        <constraint firstItem="uTQ-qb-U61" firstAttribute="top" secondItem="hvM-Hi-ABM" secondAttribute="top" id="dx8-El-xNH"/>
+                        <constraint firstItem="uTQ-qb-U61" firstAttribute="width" secondItem="hvM-Hi-ABM" secondAttribute="width" id="kqS-tT-TT7"/>
+                        <constraint firstAttribute="bottom" secondItem="uTQ-qb-U61" secondAttribute="bottom" id="pEX-AE-HIy"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="wrU-4O-EGb"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="dFt-yX-d0f"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hvM-Hi-ABM" secondAttribute="trailing" id="6PR-UF-rql"/>
+                <constraint firstAttribute="bottom" secondItem="G2d-hJ-EWd" secondAttribute="bottom" id="96A-Qg-HgY"/>
+                <constraint firstAttribute="bottom" secondItem="hvM-Hi-ABM" secondAttribute="bottom" id="9BQ-TV-eOb"/>
+                <constraint firstItem="G2d-hJ-EWd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rxa-aL-dAY"/>
+                <constraint firstItem="hvM-Hi-ABM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VPQ-7e-NNe"/>
+                <constraint firstItem="G2d-hJ-EWd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hF9-r2-XFs"/>
+                <constraint firstAttribute="trailing" secondItem="G2d-hJ-EWd" secondAttribute="trailing" id="tqY-gf-THK"/>
+                <constraint firstItem="hvM-Hi-ABM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zqr-KD-Byr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_login" width="375" height="812"/>
+    </resources>
+</document>

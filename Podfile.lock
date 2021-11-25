@@ -1,0 +1,50 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.8.2)
+  - ChromaColorPicker (1.8.0)
+  - IQKeyboardManagerSwift (5.0.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - RLBAlertsPickers (1.1.2)
+  - SignaturePad (1.1.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - ChromaColorPicker
+  - IQKeyboardManagerSwift (= 5.0.0)
+  - NVActivityIndicatorView
+  - RLBAlertsPickers
+  - SignaturePad
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - ChromaColorPicker
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - RLBAlertsPickers
+    - SignaturePad
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ChromaColorPicker: 2e47f5acb805d53350fb7af1b511bc534b38ee31
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  RLBAlertsPickers: 2548943b0cb16620904cbd926a645362d1b43963
+  SignaturePad: b0737dd95909731532e7bea0214e603bed72796f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 3c55b0a9f5f262a55ed18b2fb4e9ba2b9dc85806
+
+COCOAPODS: 1.7.5

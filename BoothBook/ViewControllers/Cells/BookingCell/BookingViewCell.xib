@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="BookingViewCell" customModule="BoothBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="NIY-qj-ev3">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="59.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyI-VK-TJL">
+                                <rect key="frame" x="20" y="0.0" width="25" height="59.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_time" translatesAutoresizingMaskIntoConstraints="NO" id="Twl-hi-F8i">
+                                        <rect key="frame" x="1" y="2" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="qMJ-FQ-Gh0"/>
+                                            <constraint firstAttribute="width" secondItem="Twl-hi-F8i" secondAttribute="height" multiplier="1:1" id="z9G-WW-6Ui"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="AJp-fi-cdS"/>
+                                    <constraint firstItem="Twl-hi-F8i" firstAttribute="leading" secondItem="MyI-VK-TJL" secondAttribute="leading" constant="1" id="oKI-Yx-iDW"/>
+                                    <constraint firstItem="Twl-hi-F8i" firstAttribute="top" secondItem="MyI-VK-TJL" secondAttribute="top" constant="2" id="ter-Ev-03r"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Sat, 10th Aug Aug 2019, 6.30pm - 9.30pm @ Harefield Barn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-mP-5dk">
+                                <rect key="frame" x="60" y="0.0" width="280" height="59.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dfn-mP-5dk" firstAttribute="top" secondItem="NIY-qj-ev3" secondAttribute="top" id="22A-X5-T8P"/>
+                            <constraint firstItem="MyI-VK-TJL" firstAttribute="leading" secondItem="NIY-qj-ev3" secondAttribute="leading" constant="20" id="B1d-Wc-wlj"/>
+                            <constraint firstAttribute="bottom" secondItem="MyI-VK-TJL" secondAttribute="bottom" id="OXs-cW-abk"/>
+                            <constraint firstAttribute="bottom" secondItem="dfn-mP-5dk" secondAttribute="bottom" id="YSc-xr-l9Y"/>
+                            <constraint firstItem="MyI-VK-TJL" firstAttribute="top" secondItem="NIY-qj-ev3" secondAttribute="top" id="ZGe-RX-3O1"/>
+                            <constraint firstItem="dfn-mP-5dk" firstAttribute="leading" secondItem="MyI-VK-TJL" secondAttribute="trailing" constant="15" id="dGz-nn-a2q"/>
+                            <constraint firstAttribute="trailing" secondItem="dfn-mP-5dk" secondAttribute="trailing" constant="20" id="xsx-iE-vNi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NIY-qj-ev3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CgD-3F-XSF"/>
+                    <constraint firstAttribute="bottom" secondItem="NIY-qj-ev3" secondAttribute="bottom" constant="15" id="Qg3-eV-2kb"/>
+                    <constraint firstItem="NIY-qj-ev3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uzi-vG-FQS"/>
+                    <constraint firstAttribute="trailing" secondItem="NIY-qj-ev3" secondAttribute="trailing" id="woF-Jr-lUk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImage" destination="Twl-hi-F8i" id="1Rj-3d-S7t"/>
+                <outlet property="llbTextDetail" destination="dfn-mP-5dk" id="8qG-4e-SvY"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="45.200892857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_time" width="15" height="15"/>
+    </resources>
+</document>
